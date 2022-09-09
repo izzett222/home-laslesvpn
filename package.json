@@ -1,0 +1,26 @@
+{
+  "name": "home-laslesvpn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/izzett222/home-laslesvpn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/izzett222/home-laslesvpn/issues"
+  },
+  "homepage": "https://github.com/izzett222/home-laslesvpn#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
+    "vite": "^3.1.0"
+  }
+}
