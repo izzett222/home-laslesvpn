@@ -10,53 +10,65 @@
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
-<body class="px-36">
-    <header class="flex mt-14 mx-auto">
-        <ul class="flex items-baseline gap-10 w-full">
-            <li class="mr-auto"><div><img  class="inline-block mr-3 relative -top-1" src="/assets/logo.svg" alt="logo"><span>LaslesVPN</span></div></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Features</a></li>
-            <li><a href="">pricing</a></li>
-            <li><a href="">Testimonials</a></li>
-            <li class="mr-auto"><a href="">Help</a></li>
-            <li><a href="" class="font-medium">Signin</a></li>
-            <li><a href="#" class="text-red-500 py-2 inline-block px-9 border-red-400 border-solid border-2 rounded-3xl">Sign up</a></li>
+<body class="px-4 xl:px-36">
+    <header class="flex mt-14 justify-between">
+        <div class="w-max flex items-center relative z-10"><img  class="inline-block mr-3 relative -top-1" src="/assets/logo.svg" alt="logo"><span>LaslesVPN</span></div>
+        <div>
+            <button class="p-1 block relative z-10 md:hidden">
+                <div class="w-6 h-[3px] rounded-sm before:rounded-sm after:rounded-sm bg-black after:bg-black before:bg-black after:relative after:top-[4px] before:block after:block after:w-6 after:h-[3px] before:relative before:top-[-7px] before:w-6 before:h-[3px]"></div>
+            </button>
+            <ul class="hidden md:flex md:flex-row md:items-baseline gap-6">
+            <li><a href="" class="text-xs lg:text-base">About</a></li>
+            <li><a href="" class="text-xs lg:text-base">Features</a></li>
+            <li><a href="" class="text-xs lg:text-base">pricing</a></li>
+            <li><a href="" class="text-xs lg:text-base">Testimonials</a></li>
+            <li class="md:mr-16"><a href="" class="text-xs lg:text-base">Help</a></li>
+            <li><a href="" class="font-xs lg:font-base font-semibold">Signin</a></li>
+            <li><a href="#" class="text-red-500 py-1 lg:py-2 inline-block px-3 lg:px-9 border-red-400 border-solid border-2 rounded-3xl">Sign up</a></li>
         </ul> 
+        </div>
+        
     </header>
     <main>
-        <section class="flex mt-20 gap-10">
+        <section class="flex flex-col items-center lg:items-start lg:flex-row mt-20 gap-10">
             <div class="flex-1 flex flex-col justify-center items-start">
                 <h1 class='text-5xl font-bold leading-[70px]'>Want anything to be<br /> with LaslesVPN.</h1>
                 <p class="mt-5 w-[520px] leading-8">Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.</p>
                 <a class=" py-4 px-20 inline-block bg-red-500 text-white rounded-md shadow-lg mt-12" href="#">Get started</a>
             </div>
-            <img class="flex-1" src="/assets/banner.svg" alt="">
+            <div class="flex-1"><img class="w-full"  src="/assets/banner.svg" alt=""></div>
+            
         </section>
-        <section class="px-24 mt-24 flex justify-between items-center mx-auto shadow-lg rounded-lg bg-white h-52">
-            <div class="flex gap-9">
-                <div class=" w-14 h-14 bg-red-100 rounded-full flex justify-center items-center">
+        <section class="px-24 mt-24 flex flex-col md:flex-row justify-between items-stretch md:items-center mx-auto shadow-lg rounded-lg bg-white h-52 divide-x-0 md:divide-x-2 divide-y-2 md:divide-y-0 h-fit">
+            <div class="flex gap-9 flex-1 md:justify-center py-8 md:py-0">
+                <div class="flex-1 flex justify-end">
+                    <div class=" w-14 h-14 bg-red-100 rounded-full flex justify-center items-center">
                     <img src="assets/profile.svg" alt="">
                 </div>
-                <p class="flex flex-col gap-1"><span class="font-bold text-2xl">90+</span><span class="text-xl">Users</span></p>
+                </div>
+                <p class="flex flex-col gap-1 flex-1"><span class="font-bold text-2xl">90+</span><span class="text-xl">Users</span></p>
             </div>
-            <div class="bg-[#EEEFF2] w-[2px] h-32"></div>
-            <div class="flex gap-9">
+            <div class="flex gap-9 flex-1 justify-center py-8 md:py-0">
+                <div class="flex-1 flex justify-end">
                 <div class=" w-14 h-14 bg-red-100 rounded-full flex justify-center items-center">
                     <img src="assets/location.svg" alt="">
                 </div>
-                <p class="flex flex-col gap-1"><span class="font-bold text-2xl">30+</span><span class="text-xl">Locations</span></p>
-            </div>
-            <div class="bg-[#EEEFF2] w-[2px] h-32"></div>
-            <div class="flex gap-9">
-                <div class=" w-14 h-14 bg-red-100 rounded-full flex justify-center items-center">
-                    <img src="assets/bars.svg" alt="">
                 </div>
-                <p class="flex flex-col gap-1"><span class="font-bold text-2xl">50+</span><span  class="text-xl">Servers</span></p>
+                <p class="flex flex-col gap-1 flex-1"><span class="font-bold text-2xl">30+</span><span class="text-xl">Locations</span></p>
+            </div>
+            <div class="flex gap-9 flex-1 justify-center  py-8 md:py-0">
+                <div class="flex-1 flex justify-end">
+                   <div class=" w-14 h-14 bg-red-100 rounded-full flex justify-center items-center">
+                    <img src="assets/bars.svg" alt="">
+                </div> 
+                </div>
+                
+                <p class="flex flex-1 flex-col gap-1"><span class="font-bold text-2xl">50+</span><span  class="text-xl">Servers</span></p>
             </div>
         </section>
-        <section class=" mt-24 flex gap-40">
+        <section class=" mt-24 flex flex-col md:flex-row gap-40">
             <img class="flex-1" src="./assets/illustration-2.svg" alt="">
-            <div class="flex-1 self-end">
+            <div class="flex-1 self-center md:self-end">
                 <h2 class=" font-medium text-3xl max-w-[384px]">We Provide Many Features You Can Use</h2>
                 <p class="max-w-[428px] leading-8 mb-5">You can explore the features that we provide with fun and have their own functions each feature.</p>
                 <ol>
